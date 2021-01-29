@@ -1,12 +1,18 @@
 /* Main elements */
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-body {
+
+* {
     font-family: 'Raleway', Arial, sans-serif;
 }
-#main_wrapper {
-    width: 95%;
-    margin: auto;
+body {
+    margin: 0 auto;
+}
+.fas {
+    color: #0065FC;
+} 
+p {
+    font-size: x-small;
 }
 
 /* Header */
@@ -14,29 +20,19 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 }
-#logo img{
+header img{
     width: 90px;
-    height: 40px;
 }
-section h3 {
-    font-weight: bold;
-}
-.fas {
-    color: #0065FC;
-}
-
 
 /* Navigation */
 
-nav ul {
-    list-style: none;
+nav {
     display: flex;
+    list-style: none;
+    width: 300px;
     justify-content: space-between;
-}
-nav li {
-    margin-right: 15px;;
 }
 nav a {
     color: #0065FC;
@@ -47,15 +43,19 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Search section */ 
-#search h3 {
-    font-size: large;
-}
-#search p {
-   font-size: x-small; 
+/* Search  */ 
+#headline {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
 }
 
 /* Search bar */ 
+
+#headline {
+    background-color: yellow;
+}
+
 #search_bar {
     display: flex;
     margin-bottom: 20px;
