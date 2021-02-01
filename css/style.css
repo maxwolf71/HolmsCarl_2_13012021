@@ -12,12 +12,6 @@ body {
 .fas {
     color: #0065FC;
 } 
-p {
-    font-size: x-small;
-}
-h4 {
-    font-size: 10px;
-}
 
 /* ----------- Header ------------------ */
 
@@ -113,12 +107,6 @@ nav a:hover {
 
 #stays_main_container {
     display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-#stays_main_container img {
-    border-radius: 10px 10px 0 0;
-    padding: 4px;
 }
 #stays_sub_container {
     background-color: #F2F2F2;
@@ -126,41 +114,84 @@ nav a:hover {
     padding: 15px;
     width: 65%;
     margin-right: 15px;
-    height: 500px;
-    
-}
-#stays_sub_container img {
-    width: 95%;
-    max-height: 40%;
 }
 #room_gallery {
+    min-height: 500px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.room_picture {
-    background-color: white;
-    border-radius: 15px;
-    width: 30%;
-    max-height: 30%;
-  
+.room_box {
+    position: relative;
+    background-size: cover;
+    background-position:;
+    min-width: 250px;
+    height: 200px;
 }
-.room_picture, .far, .fas {
-    font-size: xx-small;
+.room_box1 {
+    background-image: url(/images/hebergements/auberge_de_la_cannebiere.jpg);
+}
+.room_box2 {
+    background-image: url(/images/hebergements/hotel_du_port.jpg);
+}
+.room_box3 {
+    background-image: url(/images/hebergements/hotel_les_mouettes.jpg);
+}
+.room_box4 {
+    background-image: url(/images/hebergements/hotel_de_la_mer.jpg);
+}
+.room_box5 {
+    background-image: url(/images/hebergements/auberge_le_panier.jpg);
+}
+.room_box6 {
+    background-image: url(/images/hebergements/hotel_chez_amina.jpg);
+}
+.room_details {
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-left: 10px;
+    color: black;
+}
+.room_name {
+    font-size: 13px;
+    line-height: 3px;
+}
+.room_price {
+    font-size: 10px;
+    line-height: 3px;
+}
+.room_rating {
+    font-size: 10px;
 }
 
 /* ----------- Popular ------------------ */
 
-#popular_container {
+.popular_container {
     background-color: #F2F2F2;
     border-radius: 15px;
     padding: 15px;
     width: 35%;
     height: 500px;
-  
 }
-#popular_container img {
-    width: 100px;
+.popular_gallery {
+    
+}
+.popular_box {
+
+}
+.popular_details {
+
+}
+.popular_name {
+
+}
+.popular_price {
+
+}
+.popular_rating {
+
 }
 
 
