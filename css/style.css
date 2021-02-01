@@ -7,6 +7,7 @@
 }
 body {
     margin: 0 auto;
+    width: 90%;
 }
 .fas {
     color: #0065FC;
@@ -18,7 +19,7 @@ h4 {
     font-size: 10px;
 }
 
-/* Header */
+/* ----------- Header ------------------ */
 
 header {
     display: flex;
@@ -29,7 +30,7 @@ header img{
     width: 90px;
 }
 
-/* Navigation */
+/* ----------- Navigation ------------------ */
 
 nav {
     display: flex;
@@ -46,14 +47,15 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Search  */ 
+/* ----------- Search ------------------ */ 
+
 #headline {
     display: flex;
     flex-direction: column;
     align-items:flex-start;
 }
 
-/* Search bar */ 
+/* ----------- Search bar ------------------ */ 
 
 #search_bar {
     display: flex;
@@ -65,20 +67,25 @@ nav a:hover {
     padding: 10px;
     border-radius: 15px 0 0 15px;
 }
-#search_bar #city_country {
+#city_country {
   padding: 10px;
   border:1px solid #F2F2F2;
+  font-weight: bold;
 }
-#search_bar #submit {
+#submit {
     background-color: #0065FC;
     color: white;
     padding: 10px;
     border-radius: 0 15px 15px 0;
 }
+#submit:hover {
+    color: black;
+}
 
-/* filters */ 
+/* ----------- Filters ------------------ */ 
 #filters {
     display: flex;
+    margin-bottom: 20px;
 }
 .search_item {
     border: 2px solid lightgray;
@@ -99,55 +106,84 @@ nav a:hover {
 }
 #filters a:hover {
     text-decoration: underline;
-    color:#F2F2F2;
+    color: #0065FC;
 }
 
-/* Stays */
+/* ----------- Stays ------------------ */
 
-#stays_wrapper {
+#stays_main_container {
     display: flex;
+    justify-content: space-between;
     margin-top: 20px;
 }
-#stays_wrapper img {
-    width: 150px;
+#stays_main_container img {
+    border-radius: 10px 10px 0 0;
+    padding: 4px;
 }
-#stays {
+#stays_sub_container {
     background-color: #F2F2F2;
     border-radius: 15px;
     padding: 15px;
     width: 65%;
     margin-right: 15px;
     height: 500px;
+    
 }
-#room_pictures {
+#stays_sub_container img {
+    width: 95%;
+    max-height: 40%;
+}
+#room_gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+.room_picture {
+    background-color: white;
+    border-radius: 15px;
+    width: 30%;
+    max-height: 30%;
+  
+}
+.room_picture, .far, .fas {
+    font-size: xx-small;
+}
 
-/* Popular */
-#popular {
+/* ----------- Popular ------------------ */
+
+#popular_container {
     background-color: #F2F2F2;
     border-radius: 15px;
     padding: 15px;
-    width: 25%;
+    width: 35%;
     height: 500px;
+  
 }
-.popular_pictures {
-    
+#popular_container img {
+    width: 100px;
 }
- /* Activity */
+
+
+
+/* ----------- Activities ------------------ */
  
- #activity {
-   display: flex;
-   
+ #activities_main_container {
+ 
  }
- #activity img {
-     width: 100px;
+ #activities_main_container img {
+     width: 150px;
  }
+ #activities_gallery {
+     display: flex;
+    ;
+ }
+ .activities_picture {
+     
+ }
+
+ /* ----------- Footer ------------------ */
 
  footer {
     display: flex;
-    
  }
 
