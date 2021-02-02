@@ -126,6 +126,7 @@ nav a:hover {
     position: relative;
     background-size: cover;
     width: 200px;
+    border-radius: 10px 10px 0 0; 
 }
 .room_box1 {
     background-image: url(/images/hebergements/auberge_de_la_cannebiere.jpg);
@@ -184,6 +185,7 @@ nav a:hover {
     background-size: cover;
     width: 200px;
     flex: 1;
+    border-radius: 10px 0 0 10px;
 }
 .popular_box1 {
     background-image: url(/images/hebergements/hotel_le_soleil_du_matin.jpg);
@@ -220,12 +222,14 @@ nav a:hover {
     flex-wrap: wrap;
  }
  .activity_box {
+    border-radius: 10px 10px 0 0;
     background-size: cover;
     width: 100px;
     height: 100px;
     flex: 1;
  }
  .activity_box_large {
+    border-radius: 10px 10px 0 0;
     background-size: cover;
     width: 100px;
     height: 300px;
