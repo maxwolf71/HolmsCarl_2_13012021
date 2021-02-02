@@ -7,7 +7,7 @@
 }
 body {
     margin: 0 auto;
-    width: 90%;
+    width: 95%;
 }
 .fas {
     color: #0065FC;
@@ -107,12 +107,13 @@ nav a:hover {
 
 #stays_main_container {
     display: flex;
+    height: 600px;
 }
 #stays_sub_container {
     background-color: #F2F2F2;
     border-radius: 15px;
     padding: 15px;
-    width: 65%;
+    width: 75%;
     margin-right: 15px;
 }
 #room_gallery {
@@ -124,9 +125,7 @@ nav a:hover {
 .room_box {
     position: relative;
     background-size: cover;
-    background-position:;
-    min-width: 250px;
-    height: 200px;
+    width: 200px;
 }
 .room_box1 {
     background-image: url(/images/hebergements/auberge_de_la_cannebiere.jpg);
@@ -172,45 +171,88 @@ nav a:hover {
     background-color: #F2F2F2;
     border-radius: 15px;
     padding: 15px;
-    width: 35%;
-    height: 500px;
+    width: 25%;
 }
 .popular_gallery {
-    
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 .popular_box {
-
+    position: relative;
+    background-size: cover;
+    width: 200px;
+    flex: 1;
+}
+.popular_box1 {
+    background-image: url(/images/hebergements/hotel_le_soleil_du_matin.jpg);
+}
+.popular_box2 {
+    background-image: url(/images/hebergements/au_coeur_de_leau.jpg);
+}
+.popular_box3 {
+    background-image: url(/images/hebergements/hotel_tout_bleu_et_blanc.jpg);
 }
 .popular_details {
-
+    background-color: white;
+    position: absolute;
+    right: 0;
 }
 .popular_name {
-
+    font-size: 13px;
 }
 .popular_price {
-
+    font-size: 10px;
 }
 .popular_rating {
-
+    font-size: 10px;
 }
-
-
 
 /* ----------- Activities ------------------ */
  
- #activities_main_container {
- 
- }
- #activities_main_container img {
-     width: 150px;
+ #activities_container {
+    margin-top: 30px;;
  }
  #activities_gallery {
-     display: flex;
-    ;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
  }
- .activities_picture {
-     
+ .activity_box {
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    flex: 1;
  }
+ .activity_box_large {
+    background-size: cover;
+    width: 100px;
+    height: 300px;
+    flex: 1;
+ }
+ .activity_box1 {
+    background-image: url(/images/activites/vieux_port.jpg);
+ }
+ .activity_box2 {
+    background-image: url(/images/activites/fort_de_porneques.jpg);
+ }
+ .activity_box3 {
+    background-image: url(/images/activites/iles_du_frioul.jpg);
+ }
+ .activity_box4 {
+    background-image: url(/images/activites/parc_national_des_calenques.jpg);
+ }
+ .activity_box5 {
+    background-image: url(/images/activites/notre_dame_de_la_garde.jpg);
+ }
+ .activity_box6 {
+    background-image: url(/images/activites/parc_longchamp.jpg);
+ }
+ .activity_name, a {
+    text-decoration: none;
+ }
+
 
  /* ----------- Footer ------------------ */
 
