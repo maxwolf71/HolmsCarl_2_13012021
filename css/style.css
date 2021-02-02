@@ -264,3 +264,9 @@ nav a:hover {
     display: flex;
  }
 
+  /* ----------- Responsive ------------------ */
+  @media (max-width: 600px) {
+    h3 {
+        font-size: 50px;
+    }
+  }
