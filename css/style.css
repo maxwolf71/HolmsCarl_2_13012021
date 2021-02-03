@@ -129,22 +129,22 @@ nav a:hover {
     border-radius: 10px 10px 0 0; 
 }
 .room_box1 {
-    background-image: url(/images/hebergements/auberge_de_la_cannebiere.jpg);
+    background-image: url(../images/hebergements/auberge_de_la_cannebiere.jpg);
 }
 .room_box2 {
-    background-image: url(/images/hebergements/hotel_du_port.jpg);
+    background-image: url(../images/hebergements/hotel_du_port.jpg);
 }
 .room_box3 {
-    background-image: url(/images/hebergements/hotel_les_mouettes.jpg);
+    background-image: url(../images/hebergements/hotel_les_mouettes.jpg);
 }
 .room_box4 {
-    background-image: url(/images/hebergements/hotel_de_la_mer.jpg);
+    background-image: url(../images/hebergements/hotel_de_la_mer.jpg);
 }
 .room_box5 {
-    background-image: url(/images/hebergements/auberge_le_panier.jpg);
+    background-image: url(../images/hebergements/auberge_le_panier.jpg);
 }
 .room_box6 {
-    background-image: url(/images/hebergements/hotel_chez_amina.jpg);
+    background-image: url(../images/hebergements/hotel_chez_amina.jpg);
 }
 .room_details {
     background-color: white;
@@ -188,13 +188,13 @@ nav a:hover {
     border-radius: 10px 0 0 10px;
 }
 .popular_box1 {
-    background-image: url(/images/hebergements/hotel_le_soleil_du_matin.jpg);
+    background-image: url(../images/hebergements/hotel_le_soleil_du_matin.jpg);
 }
 .popular_box2 {
-    background-image: url(/images/hebergements/au_coeur_de_leau.jpg);
+    background-image: url(../images/hebergements/au_coeur_de_leau.jpg);
 }
 .popular_box3 {
-    background-image: url(/images/hebergements/hotel_tout_bleu_et_blanc.jpg);
+    background-image: url(../images/hebergements/hotel_tout_bleu_et_blanc.jpg);
 }
 .popular_details {
     background-color: white;
@@ -236,22 +236,22 @@ nav a:hover {
     flex: 1;
  }
  .activity_box1 {
-    background-image: url(/images/activites/vieux_port.jpg);
+    background-image: url(../images/activites/vieux_port.jpg);
  }
  .activity_box2 {
-    background-image: url(/images/activites/fort_de_porneques.jpg);
+    background-image: url(../images/activites/fort_de_porneques.jpg);
  }
  .activity_box3 {
-    background-image: url(/images/activites/iles_du_frioul.jpg);
+    background-image: url(../images/activites/iles_du_frioul.jpg);
  }
  .activity_box4 {
-    background-image: url(/images/activites/parc_national_des_calenques.jpg);
+    background-image: url(../images/activites/parc_national_des_calenques.jpg);
  }
  .activity_box5 {
-    background-image: url(/images/activites/notre_dame_de_la_garde.jpg);
+    background-image: url(../images/activites/notre_dame_de_la_garde.jpg);
  }
  .activity_box6 {
-    background-image: url(/images/activites/parc_longchamp.jpg);
+    background-image: url(../images/activites/parc_longchamp.jpg);
  }
  .activity_name, a {
     text-decoration: none;
