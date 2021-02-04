@@ -118,7 +118,7 @@ nav a:hover {
     margin-right: 15px;
 }
 #room_gallery {
-    min-height: 500px;
+    min-height: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -126,7 +126,7 @@ nav a:hover {
 .room_box {
     position: relative;
     background-size: cover;
-    width: 30%;
+    min-width: 30%;
     border-radius: 15px; 
     margin-bottom: 25px;
 }
@@ -181,14 +181,15 @@ nav a:hover {
     min-height: 500px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .popular_box {
     position: relative;
     background-size: cover;
-    width: 90%;
+    max-width: 90%;
     flex: 1;
     border-radius: 15px;
+    margin-bottom: 25px;
 }
 .popular_box1 {
     background-image: url(../images/hebergements/hotel_le_soleil_du_matin.jpg);
@@ -228,7 +229,7 @@ nav a:hover {
     display: flex;
     border: 4px solid lightskyblue;
  }
- .activity_box, .activity_box_large {
+ .activity_box {
     position: relative;
     background-size: cover;
     border-radius: 10px;
@@ -274,11 +275,27 @@ nav a:hover {
 
  footer {
     display: flex;
+    border-radius: 15px;
+    background-color: #F2F2F2;
+    height: 130px;
  }
+ .about_box {
+    padding-left: 20px;
+    margin-right: auto ;
+ }
+ .about_box a {
+    text-decoration: none;
+    color: black;
+ }
+ .about_box p {
+    font-size: 10px;
+    line-height: 7px;
+ }
+
 
   /* ----------- Responsive ------------------ */
   @media (max-width: 600px) {
-    h3 {
-        font-size: 50px;
+     {
+        
     }
   }
