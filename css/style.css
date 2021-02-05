@@ -117,48 +117,24 @@ nav a:hover {
 }
 #stays_sub_container {
     background-color: #F2F2F2;
-    border-radius: 15px;
-    padding: 15px;
     width: 75%;
     margin-right: 35px;
+    border-radius: 15px;
 }
 #room_gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    min-height: 80%;
+    justify-content: space-around;
 }
 .room_box {
-    position: relative;
-    background-size: cover;
-    min-width: 30%;
-    border-radius: 15px; 
-    margin-bottom: 25px;
-}
-.room_box1 {
-    background-image: url(../images/hebergements/auberge_de_la_cannebiere.jpg);
-}
-.room_box2 {
-    background-image: url(../images/hebergements/hotel_du_port.jpg);
-}
-.room_box3 {
-    background-image: url(../images/hebergements/hotel_les_mouettes.jpg);
-}
-.room_box4 {
-    background-image: url(../images/hebergements/hotel_de_la_mer.jpg);
-}
-.room_box5 {
-    background-image: url(../images/hebergements/auberge_le_panier.jpg);
-}
-.room_box6 {
-    background-image: url(../images/hebergements/hotel_chez_amina.jpg);
-}
-.room_details {
+    width: 30%;
+    padding: 5px;
+    border-radius: 15px;
     background-color: white;
-    position: absolute;
-    bottom: 0;
+}
+.room_box img {
     width: 100%;
-    border-radius: 0 0 15px 15px;
+    border-radius: 15px;
 }
 .room_name {
     font-size: 13px;
