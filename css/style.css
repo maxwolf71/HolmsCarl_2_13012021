@@ -9,9 +9,6 @@ body {
     margin: 0 auto;
     width: 95%;
 }
-h3 {
-    font-size: 15px;
-}
 .fas {
     color: #0065FC;
 }
@@ -22,8 +19,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 10px;
 }
-header img{
+.logo {
     width: 90px;
 }
 
@@ -80,6 +78,7 @@ nav a:hover {
 }
 #submit:hover {
     color: black;
+    background-color: white;
 }
 
 /* ----------- Filters ------------------ */ 
@@ -99,7 +98,6 @@ nav a:hover {
     padding-right: 15px;
 }
 .filter_item .fas {
-    position: relative;
     background-color: #DEEBFF;
     padding: 12px;
     border-radius: 30px;
@@ -118,11 +116,14 @@ nav a:hover {
     color: white;
 }
 
-/* ----------- Stays ------------------ */
+/* ----------------- STAYS ------------------ */
 
+/* Container hébergements + populaires */ 
 #stays_main_container {
     display: flex;
 }
+
+/* Container hébergements */
 #stays_sub_container {
     width: 70%;
     background-color: #F2F2F2;
@@ -130,12 +131,16 @@ nav a:hover {
     padding: 15px;
     margin-right: 35px;
 }
+
+/* gallerie photos hébergements */
 #room_gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    height: 90%;
+    height: 80%;
 }
+
+/* cadres photos + infos */
 .room_box {
     width: 30%;
     position: relative;
@@ -145,6 +150,8 @@ nav a:hover {
     margin-bottom: 25px;
     border: 4px solid white; 
 }
+
+/* liens images en fond */
 .room_box1 {
     background-image: url(../images/hebergements/auberge_de_la_cannebiere.jpg);
 }
@@ -165,6 +172,8 @@ nav a:hover {
     background-image: url(../images/hebergements/hotel_chez_amina.jpg);
     background-position: 5% 65%;
 }
+
+/* infos hébergements */
 .room_details {
     background-color: white;
     position: absolute;
@@ -185,23 +194,24 @@ nav a:hover {
 .room_rating {
     font-size: 10px;
 }
+
+/* afficher plus */
 .plus {
-    position: relative;
-    top: -25px;
-    left: 15px;
     font-weight: bold;
     font-size: 13px;
-    
 }
 
-/* ----------- Popular ------------------ */
+/* ----------- POPULAR ------------------ */
 
+/* container les plus populaires */
 #popular_container {
     background-color: #F2F2F2;
     border-radius: 15px;
     padding: 15px;
     width: 25%;
 }
+
+/* titre + icon */
 .top_title {
     display: flex;
     justify-content: space-between;
@@ -211,12 +221,16 @@ nav a:hover {
 .top_title .fas {
     color: black;
 }
+
+/* gallerie photos hébergements */
 #popular_gallery {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     min-height: 500px;
 }
+
+/* cadres photos + infos */
 .popular_box {
     width: 88%;
     position: relative;
@@ -227,6 +241,8 @@ nav a:hover {
     margin-bottom: 25px;
     border: 4px solid white;
 }
+
+/* liens images en fond */
 .popular_box1 {
     background-image: url(../images/hebergements/hotel_le_soleil_du_matin.jpg);
 }
@@ -236,6 +252,8 @@ nav a:hover {
 .popular_box3 {
     background-image: url(../images/hebergements/hotel_tout_bleu_et_blanc.jpg);
 }
+
+/* infos populaires */
 .popular_details {
     background-color: white;
     position: absolute;
@@ -257,8 +275,9 @@ nav a:hover {
     font-size: 10px;
 }
 
-/* ----------- Activities ------------------ */
+/* ----------- ACTIVITIES ------------------ */
  
+/* Container activités */
  #activities_main_container {
     display: flex;
     margin-top: 30px;
@@ -267,12 +286,16 @@ nav a:hover {
  #activities_sub_container {
     width: 100%;
  }
+
+/* gallerie photos activités */
  .activities_gallery {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
     height: 85%;
  }
+
+ /* cadres photos + infos */
  .activity_box {
     width: 20%;
     position: relative;
@@ -281,6 +304,8 @@ nav a:hover {
     box-shadow: 0 5px #F2F2F2;
     border-radius: 10px;
  }
+
+ /* liens images en fond + ajustements */
  .activity_box1 {
     background-image: url(../images/activites/vieux_port.jpg);
     height: 100%;
@@ -308,6 +333,8 @@ nav a:hover {
     height: 50%;
     background-position: center;
  }
+
+ /* titre activité */ 
 .activity_name {
     background-color: white;
     position: absolute;
@@ -320,6 +347,7 @@ nav a:hover {
 
  /* ----------- Footer ------------------ */
 
+ /* A propos de */
  footer {
     display: flex;
     border-radius: 15px;
