@@ -15,38 +15,33 @@ body {
 
 /* ----------- Header ------------------ */
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-}
 .logo {
-    width: 90px;
+   width: 100px; 
 }
 
 /* ----------- Navigation ------------------ */
-
-nav ul {
+.navbar_desktop {
     display: flex;
-    list-style: none;
     justify-content: space-between;
-    width: 300px;
 }
-nav a {
+.nav_links {
+    list-style: none;
+    display: flex;
+}
+.nav_item a {
     color: #0065FC;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 15px;
+    padding: 0 20px;
 }
-nav a:hover {
+.nav_item a:hover {
     color: gray;
-    text-decoration: underline;
 }
 
 /* ----------- Headline ------------------ */ 
 
 #headline {
-  line-height: 10px;
+  line-height: 20px;
   margin-bottom: 20px;
 }
 
@@ -63,8 +58,8 @@ nav a:hover {
     border-radius: 15px 0 0 15px;
 }
 #city_country {
-  padding: 10px;
-  border:1px solid #F2F2F2;
+    padding-left: 10px;
+    border:1px solid #F2F2F2;
 }
 ::placeholder {
     color: black;
@@ -73,7 +68,6 @@ nav a:hover {
 #submit {
     background-color: #0065FC;
     color: white;
-    padding: 10px;
     border-radius: 0 15px 15px 0;
 }
 #submit:hover {
@@ -119,13 +113,15 @@ nav a:hover {
 /* ----------------- STAYS ------------------ */
 
 /* Container hébergements + populaires */ 
+
 #stays_main_container {
     display: flex;
 }
 
 /* Container hébergements */
+
 #stays_sub_container {
-    width: 70%;
+    flex: 70%;
     background-color: #F2F2F2;
     border-radius: 15px;
     padding: 15px;
@@ -133,6 +129,7 @@ nav a:hover {
 }
 
 /* gallerie photos hébergements */
+
 #room_gallery {
     display: flex;
     flex-wrap: wrap;
@@ -141,6 +138,7 @@ nav a:hover {
 }
 
 /* cadres photos + infos */
+
 .room_box {
     width: 30%;
     position: relative;
@@ -148,7 +146,7 @@ nav a:hover {
     background-size: cover;
     border-radius: 15px; 
     margin-bottom: 25px;
-    border: 4px solid white; 
+    border: 4px solid white;
 }
 
 /* liens images en fond */
@@ -170,7 +168,7 @@ nav a:hover {
 }
 .room_box6 {
     background-image: url(../images/hebergements/hotel_chez_amina.jpg);
-    background-position: 5% 65%;
+    background-position: % 65%;
 }
 
 /* infos hébergements */
@@ -208,7 +206,7 @@ nav a:hover {
     background-color: #F2F2F2;
     border-radius: 15px;
     padding: 15px;
-    width: 25%;
+    flex: 25%;
 }
 
 /* titre + icon */
@@ -227,16 +225,16 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    min-height: 500px;
+    height: 80%;
 }
 
 /* cadres photos + infos */
 .popular_box {
     width: 88%;
+    min-height: 150px;
     position: relative;
     background-position: center;
     background-size: cover;
-    flex: 1;
     border-radius: 15px;
     margin-bottom: 25px;
     border: 4px solid white;
@@ -302,7 +300,7 @@ nav a:hover {
     background-size: cover;
     background-position: center;
     box-shadow: 0 5px #F2F2F2;
-    border-radius: 10px;
+    border-radius: 15px;
  }
 
  /* liens images en fond + ajustements */
@@ -343,6 +341,7 @@ nav a:hover {
     color: black;
     font-size: 12px;
     padding-left: 10px;
+    border-radius: 0 0  15px 15px;
 }
 
  /* ----------- Footer ------------------ */
@@ -368,8 +367,159 @@ nav a:hover {
     line-height: 7px;
  }
 
+/* ----------- RESPONSIVE ------------------ */
 
-  /* ----------- Responsive ------------------ */
-  @media (max-width: 600px) {
+/* ----------- DESKTOP ------------------ */
+
+/* -- icone de recherche non présent -- */
+
+    @media screen and (min-width: 375px) {
+        .fas.fa-search {
+            display: none;
+        }
+
+/* -- navbar mobile disparait -- */  
+
+        .navbar_mobile {
+            display: none;
+        }
+ }
+
+ /* ----------- MOBILE ------------------ */
+
+    @media screen and (max-width: 375px) {
+
+/* -- navbar desktop disparait -- */        
+        .navbar_desktop {
+            display: none;
+        }
+
+
+/* ----------- Menu de navigation ------------------ */
+     .navbar_mobile {
+        display: flex;
+        flex-direction: column;
+
+     }   
+    .top_container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .top_container a {
+        font-weight: bold;
+    }
+    .bottom_container {
+        display: flex;
+        justify-content: center;
+        padding: 0 0 15px 0;
+    }
     
+    .left, .right {
+        width: 50%;
+        padding: 0 0 15px 15px;
+        border-bottom: 3px solid #DEEBFF;
+    }
+    .left:hover, .right:hover {
+        padding-bottom: 10px;
+        border-bottom: 3px solid #0065FC;
+    }
+    
+       
+  
+/* ----------- Headline ------------------ */ 
+    #headline {
+        line-height: 20px;
+        margin-right: 20px;
+    }
+
+/* ----------- Search bar ------------------ */ 
+    #search_bar {
+        justify-content: center;
+    }
+    #search_bar .fas.fa-search {
+      color: white;
+      background-color: #0065FC;
+      border-radius: 10px;
+    }
+    #submit {
+        display: none;
+    }
+/* ----------- Filters ------------------ */ 
+
+    #filters {
+        flex-flow: column wrap;
+        align-items: flex-start;
+    }  
+    .filter_item {
+        margin: 0 0 10px 0; 
+    }
+
+/* ----------- Hébregements + populaire inversés ------------------ */  
+
+    #stays_main_container, #popular_container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+/* ----------- Les plus populaires ------------------ */  
+
+    #popular_container {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+    }
+    .popular_box {
+        width: 95%
+}    
+
+/* ----------- Hébergements à Marseille ------------------ */  
+
+
+    #stays_sub_container {
+        width: 95%;
+        background-color: white;
+    }
+    #room_gallery {
+        display: flex;
+        flex-direction: column;
+    }   
+    .room_box {
+        height: 200px;
+        width: 95%;
+    }
+    .room_details {
+        
+    }
+
+/* ----------- Activités à Marseille ------------------ */ 
+
+    #activities_main_container {
+         height: 1200px;
+    }
+    
+    #activities_sub_container {
+
+    }
+    .activities_gallery {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
+    .activity_box {
+        width: 95%;
+        height: 200px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+
+/* ----------- Footer ------------------ */
+    footer {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        border-radius: 0;
+    }
+
+
   }
