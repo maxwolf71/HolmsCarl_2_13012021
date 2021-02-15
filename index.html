@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width", initial-scale=1.0>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/style.css" >
         <title>Reservia</title>
         <script src="https://kit.fontawesome.com/d76715708e.js" crossorigin="anonymous"></script>
@@ -10,20 +10,44 @@
     <body> 
     <!-- Section Header + nav bar -->
         <header>
-            <img src="images/logo/logo_reservia.png" class="logo" alt="Logo Reservia">
-            <nav>
-                <ul>
-                    <li><a href="#stays_main_container" class="link1">Hébergements</a></li>
-                    <li><a href="#activities_main_container" class="link2">Activités</a></li>
-                    <li><a href="#">S'inscrire</a></li>
-                </ul>
+
+        <!--------------- navbar desktop -------------->
+
+            <nav class="navbar-desktop">
+                <img src="images/logo/logo_reservia.png" class="logo" alt="Logo Reservia">
+                <ul class="nav-links">
+                    <li class="nav-item nav_bottom"><a href="#stays_main_container">Hébergements</a></li>
+                    <li class="nav-item nav_bottom"><a href="#activities_main_container">Activités</a></li>
+                    <li class="nav-item"><a href="#">S'inscrire</a></li>
+                </ul>   
             </nav>
+            
+        <!--------------- navbar desktop -------------->  
+
+            <nav class="navbar-mobile">
+
+                <div class="top-container">
+                    <img src="images/logo/logo_reservia.png" class="logo" alt="Logo Reservia">
+                    <ul class="nav-links">
+                        <li class="nav-item"><a href="#">S'inscrire</a></li>
+                    </ul>
+                </div>
+                
+                <ul class="bottom-container nav-links">
+                    <li class="nav-item left"><a href="#stays_main_container">Hébergements</a></li>
+                    <li class="nav-item right"><a href="#activities_main_container">Activités</a></li>
+                </ul>  
+                
+            </nav>
+          
+
         </header> 
 
     <!-- Section contenant texte intro, barre de recherche + boutons filtres -->
         <section id="search">
 
         <!-- texte intro -->    
+        
             <div id="headline">
                 <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
                 <p>En plein centre ville ou en pleine nature</p>
@@ -41,7 +65,7 @@
             <div id="filters">
                 <h3>Filtres</h3> 
                 <div class="filter_item">
-                    <i class="fas fa-money-bill-wave-alt"></i></i>
+                    <i class="fas fa-money-bill-wave-alt"></i>
                     <a href="#">Economique</a>
                 </div>    
                 <div class="filter_item">
@@ -192,6 +216,7 @@
                                 <i class="far fa-star"></i>
                             </p>
                         </div>
+                    </a>    
 
                     <a href="/images/hebergements/hotel_tout_bleu_et_blanc.jpg" class="popular_box popular_box3">
                         <div class="popular_details">  
