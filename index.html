@@ -11,36 +11,16 @@
     <!-- Section Header + nav bar -->
         <header>
 
-        <!--------------- navbar desktop -------------->
+            <nav class="navbar">
 
-            <nav class="navbar_desktop">
                 <img src="images/logo/logo_reservia.png" class="logo" alt="Logo Reservia">
                 <ul class="nav_links">
-                    <li class="nav_item nav_bottom"><a href="#stays_main_container">Hébergements</a></li>
-                    <li class="nav_item nav_bottom"><a href="#activities_main_container">Activités</a></li>
-                    <li class="nav_item"><a href="#">S'inscrire</a></li>
-                </ul>   
-            </nav>
+                    <li class="nav_item left"><a href="#stays_container">Hébergements</a></li>
+                    <li class="nav_item right"><a href="#activities_container">Activités</a></li>
+                    <li class="nav_item sign_up"><a href="#">S'inscrire</a></li>
+                </ul>
             
-        <!--------------- navbar desktop -------------->  
-
-            <nav class="navbar_mobile">
-
-                <div class="top_container">
-                    <img src="images/logo/logo_reservia.png" class="logo" alt="Logo Reservia">
-                    <ul class="nav_links">
-                        <li class="nav_item"><a href="#">S'inscrire</a></li>
-                    </ul>
-                </div>
-    
-                    <ul class="nav_links bottom_container">
-                        <li class="nav_item left"><a href="#stays_main_container">Hébergements</a></li>
-                        <li class="nav_item right"><a href="#activities_main_container">Activités</a></li>
-                    </ul> 
-                
-    
             </nav>
-          
 
         </header> 
 
@@ -63,21 +43,22 @@
             </div>
 
         <!-- boutons filtres -->    
+
             <div id="filters">
                 <h3>Filtres</h3> 
-                <div class="filter_item">
+                <div class="filter_button">
                     <i class="fas fa-money-bill-wave-alt"></i>
                     <a href="#">Economique</a>
                 </div>    
-                <div class="filter_item">
+                <div class="filter_button">
                     <i class="fas fa-child"></i>
                     <a href="#">Familial</a> 
                 </div>    
-                <div class="filter_item">
+                <div class="filter_button">
                     <i class="fas fa-heart"></i>
                     <a href="#">Romantique</a>
                 </div>     
-                <div class="filter_item">
+                <div class="filter_button">
                     <i class="fas fa-dog"></i>
                     <a href="#">Animaux autorisés</a> 
                 </div>    
@@ -86,16 +67,16 @@
         </section>   
 
     <!-- Section contenant hébergements + populaires -->        
-        <section id="stays_main_container"> 
+        <section id="stays_container"> 
 
-            <!-- Section hébregements -->
-            <div id="stays_sub_container">
+        <!-- Section hébergements -->
+            <div id="stays_left_container">
                 <h3>Hébergements à Marseille</h3>
                 
                 <!-- gallerie photos hébergements -->
                 <div id="room_gallery">
                     
-                    <a href="/images/hebergements/auberge_de_la_cannebiere.jpg" class="room_box room_box1">
+                    <a href="/images/hebergements/auberge_de_la_cannebiere.jpg" class="room_frame room_frame1">
                         <div class="room_details">  
                             <h3 class="room_name" >Auberge de la Cannebière</h3>      
                             <p class="room_price">Nuit à partir de 25€</p>
@@ -109,7 +90,7 @@
                         </div>
                     </a>
                    
-                    <a href="/images/hebergements/hotel_du_port.jpg" class="room_box room_box2">
+                    <a href="/images/hebergements/hotel_du_port.jpg" class="room_frame room_frame2">
                         <div class="room_details">  
                             <h3 class="room_name" >Hôtel du Port</h3>      
                             <p class="room_price">Nuit à partir de 52€</p>
@@ -122,7 +103,7 @@
                             </p>
                         </div>
                     </a>
-                    <a href="/images/hebergements/hotel_les_mouettes.jpg" class="room_box room_box3">
+                    <a href="/images/hebergements/hotel_les_mouettes.jpg" class="room_frame room_frame3">
                         <div class="room_details">  
                             <h3 class="room_name">Hôtel Les mouettes</h3>      
                             <p class="room_price">Nuit à partir de 76€</p>
@@ -135,7 +116,7 @@
                             </p>
                         </div>
                     </a>
-                    <a href="/images/hebergements/hotel_de_la_mer.jpg" class="room_box room_box4">
+                    <a href="/images/hebergements/hotel_de_la_mer.jpg" class="room_frame room_frame4">
                         <div class="room_details">  
                             <h3 class="room_name" >Hôtel de la mer</h3>      
                             <p class="room_price">Nuit à partir de 46€</p>
@@ -148,7 +129,7 @@
                             </p>
                         </div>
                     </a>
-                    <a href="/images/hebergements/auberge_le_panier.jpg" class="room_box room_box5">
+                    <a href="/images/hebergements/auberge_le_panier.jpg" class="room_frame room_frame5">
                         <div class="room_details">  
                             <h3 class="room_name" >Auberge Le Panier</h3>      
                             <p class="room_price">Nuit à partir de 23€</p>
@@ -161,7 +142,7 @@
                             </p>
                         </div>
                     </a>
-                    <a href="/images/hebergements/hotel_chez_amina.jpg" class="room_box room_box6">
+                    <a href="/images/hebergements/hotel_chez_amina.jpg" class="room_frame room_frame6">
                         <div class="room_details">  
                             <h3 class="room_name" >Hôtel chez Amina</h3>      
                             <p class="room_price">Nuit à partir de 96€</p>
@@ -191,7 +172,7 @@
             <!-- gallery photos les plus populaires -->
                 <div id="popular_gallery">
                     
-                    <a href="/images/hebergements/hotel_le_soleil_du_matin.jpg" class="popular_box popular_box1">
+                    <a href="/images/hebergements/hotel_le_soleil_du_matin.jpg" class="popular_frame popular_frame1">
                         <div class="popular_details">  
                             <h3 class="popular_name" >Hôtel Le Soleil du matin</h3>      
                             <p class="popular_price">Nuit à partir de 128€</p>
@@ -205,7 +186,7 @@
                         </div>
                     </a>
     
-                    <a href="/images/hebergements/au_coeur_de_leau.jpg" class="popular_box popular_box2">
+                    <a href="/images/hebergements/au_coeur_de_leau.jpg" class="popular_frame popular_frame2">
                         <div class="popular_details">  
                             <h3 class="popular_name" >Au coeur de l'eau Chambre d'hôtes</h3>      
                             <p class="popular_price">Nuit à partir de 71€</p>
@@ -219,7 +200,7 @@
                         </div>
                     </a>    
 
-                    <a href="/images/hebergements/hotel_tout_bleu_et_blanc.jpg" class="popular_box popular_box3">
+                    <a href="/images/hebergements/hotel_tout_bleu_et_blanc.jpg" class="popular_frame popular_frame3">
                         <div class="popular_details">  
                             <h3 class="popular_name" >Hôtel Tout bleu et Blanc</h3>      
                             <p class="popular_price">Nuit à partir de 128€</p>
@@ -237,7 +218,7 @@
         </section>
 
     <!-- section Activités -->
-        <section id="activities_main_container">
+        <section id="activities_container">
             <div id="activities_sub_container">
                 <h3>Activités à Marseille</h3>
 
@@ -245,37 +226,37 @@
                 <div class="activities_gallery">
 
                     
-                    <a href="../images/activites/vieux_port.jpg" class="activity_box activity_box1">
+                    <a href="../images/activites/vieux_port.jpg" class="activity_frame activity_frame1">
                         <div class="activity_name">
                             <h4>Vieux Port</h4>
                         </div>
                     </a>
                     
-                    <a href="../images/activites/fort_de_porneques.jpg" class="activity_box activity_box2">
+                    <a href="../images/activites/fort_de_porneques.jpg" class="activity_frame activity_frame2">
                         <div class="activity_name">
                             <h4>Fort de Pornèques</h4>
                         </div>
                     </a>
                     
-                    <a href="../images/activites/iles_du_frioul.jpg" class="activity_box activity_box3">
+                    <a href="../images/activites/iles_du_frioul.jpg" class="activity_frame activity_frame3">
                         <div class="activity_name">
                             <h4>Îles du Frioul</h4>
                         </div>
                     </a>
                 
-                    <a href="../images/activites/parc_national_des_calenques.jpg" class="activity_box activity_box4">
+                    <a href="../images/activites/parc_national_des_calenques.jpg" class="activity_frame activity_frame4">
                         <div class="activity_name">
                             <h4>Parc National des Calenques</h4>
                         </div>
                     </a>
                 
-                    <a href="../images/activites/notre_dame_de_la_garde.jpg" class="activity_box activity_box5">
+                    <a href="../images/activites/notre_dame_de_la_garde.jpg" class="activity_frame activity_frame5">
                         <div class="activity_name">
                             <h4>Notre-Dame-de-la-Garde</h4>
                         </div>
                     </a>
                     
-                    <a href="../images/activites/parc_longchamp.jpg" class="activity_box activity_box6">
+                    <a href="../images/activites/parc_longchamp.jpg" class="activity_frame activity_frame6">
                         <div class="activity_name">
                             <h4>Parc Longchamp</h4>
                         </div>
@@ -288,19 +269,19 @@
     
     <!-- pied de page, A propos de  -->    
         <footer>
-                <div class="about_box">
+                <div class="about">
                     <h4>A propos</h4>
                     <p>Fonctionnement du site</p>
                     <p>Conditions générales de vente</p>
                     <p>Données et condidentialité</p>
                 </div>
 
-                <div class="about_box">
-                    <h4><a href="#stays_main_container">Nos hébergements</a></h4>
+                <div class="about">
+                    <h4><a href="#stays_container">Nos hébergements</a></h4>
                     <p>Charte qualité</p>
                     <p>Soumettre votre hôtel</p>
                 </div>
-                <div class="about_box">
+                <div class="about">
                     <h4>Assistance</h4>
                     <p>Centre d'aide</p>
                     <p>Nous contacter</p> 
