@@ -394,23 +394,18 @@ body {
     } 
     .nav_links {
         display: flex;
-        justify-content:flex-start;
+        flex-direction: col;
+        
     }
-    .nav_item a {
-        padding: 0 10px;
+    .nav_website {
+        display: flex;
+        border: 2px solid black;
+        width: 100%;
     }
-    .sign_up {
-        position: absolute;
-        top: 15px;
-        right: 25px;
+    .nav_website a {
+        text-decoration: none;
     }
-    .left, .right {      
-        padding-bottom: 10px;
-        border-bottom: 3px solid #DEEBFF;
-    }
-    .left:hover, .right:hover {
-        border-bottom: 3px solid #0065FC;
-    }
+    
 
 /* ----------- Headline ------------------ */ 
     #headline {
