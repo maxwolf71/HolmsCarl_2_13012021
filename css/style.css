@@ -16,23 +16,23 @@ body {
 /* ----------- Header ------------------ */
 
 .logo {
-   width: 100px; 
+   width: 5em; 
 }
 
 /* ----------- Navigation ------------------ */
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;    
 }
 .nav_links {
     display: flex;
-    list-style: none;
+    align-items: center;
 }
-.nav_item a {
+.nav_links a {
     color: #0065FC;
     text-decoration: none;
-    font-size: 15px;
-    padding: 0 20px;
+    font-size: 1em;
+    padding: 0.8em;
 }
 .nav_item a:hover {
     color: gray;
@@ -41,24 +41,23 @@ body {
 /* ----------- Headline ------------------ */ 
 
 #headline {
-  line-height: 20px;
-  margin-bottom: 20px;
+  line-height: 1em;
 }
 
 /* ----------- Search bar ------------------ */ 
 
 #search_bar {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 1em;
 }
 #search_bar .fas{
     color: black;
     background-color: #F2F2F2;
-    padding: 10px;
-    border-radius: 15px 0 0 15px;
+    padding: 1em;
+    border-radius: 1em 0 0 1em;
 }
 #city_country {
-    padding-left: 10px;
+    padding-left: 2em;
     border:1px solid #F2F2F2;
 }
 ::placeholder {
@@ -68,7 +67,7 @@ body {
 #submit {
     background-color: #0065FC;
     color: white;
-    border-radius: 0 15px 15px 0;
+    border-radius: 0 1em 1em 0;
 }
 #submit:hover {
     color: black;
@@ -87,17 +86,17 @@ body {
     display: flex;
     align-items: center;
     border-style: solid;
-    border-width: 3px 3px 3px 0;
+    border-width: 0.2em 0.2em 0.2em  0;
     border-color: #F2F2F2 ;
-    border-radius: 30px;
-    margin-left: 20px;
-    padding-right: 15px;
+    border-radius: 3em;
+    margin-left: 1em;
+    padding-right: 1em;
 }
 .filter_button .fas {
     background-color: #DEEBFF;
-    padding: 12px;
-    border-radius: 30px;
-    margin-right: 15px;
+    padding: 0.8em;
+    border-radius: 3em;
+    margin-right: 1em;
 }
 .filter_button:hover {
     background-color: #0065FC;
@@ -125,9 +124,9 @@ body {
 #stays_left_container {
     flex: 70%;
     background-color: #F2F2F2;
-    border-radius: 15px;
-    padding: 15px;
-    margin-right: 35px;
+    border-radius: 1em;
+    padding: 1em;
+    margin-right: 2em;
 }
 
 /* gallerie photos hébergements */
@@ -146,9 +145,9 @@ body {
     position: relative;
     background-position: center;
     background-size: cover;
-    border-radius: 15px; 
-    margin-bottom: 25px;
-    border: 4px solid white;
+    border-radius: 1em; 
+    margin-bottom: 1em;
+    border: 0.3em solid white;
 }
 
 /* liens images en fond */
@@ -179,11 +178,10 @@ body {
     position: absolute;
     bottom: 0;
     width: 98%;
-    padding-left: 7px;
+    padding-left: 0.6em;
 }
 .room_name {
-    font-size: 13px;
-    line-height: 3px;
+    font-size: 0.8em;
     color: black;
 }
 .room_price {
@@ -281,7 +279,7 @@ body {
  #activities_container {
     display: flex;
     margin-top: 30px;
-    height: 500px;
+    height: 30em;
  }
  #activities_sub_container {
     width: 100%;
@@ -389,23 +387,32 @@ body {
 /* ----------- Menu de navigation ------------------ */
 
     .navbar {
-        display: flex;
         flex-direction: column;
+        justify-content: center;
     } 
     .nav_links {
-        display: flex;
-        flex-direction: col;
-        
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        width: 100%;
     }
     .nav_website {
         display: flex;
-        border: 2px solid black;
+        justify-content: space-around;
         width: 100%;
-    }
+        border-bottom: 3px solid #DEEBFF;
+    }   
     .nav_website a {
-        text-decoration: none;
+        padding-top: 20px;
     }
-    
+    .nav_website a:hover {
+       border-bottom: 3px solid #0065FC;
+       margin: auto;
+       width: 50%;
+    }
+    .logo {
+        position: absolute;
+        top: 0;
+    }
 
 /* ----------- Headline ------------------ */ 
     #headline {
@@ -413,14 +420,15 @@ body {
         margin-right: 20px;
     }
 
-/* ----------- Search bar ------------------ */ 
+/* ----------- Barre de recherche ------------------ */ 
+
     #search_bar {
         justify-content: center;
     }
     #search_bar .fas.fa-search {
-      color: white;
-      background-color: #0065FC;
-      border-radius: 10px;
+        color: white;
+        background-color: #0065FC;
+        border-radius: 10px;
     }
     #submit {
         display: none;
@@ -444,42 +452,47 @@ body {
 
 /* ----------- Les plus populaires ------------------ */  
 
-    #popular_container {
-        display: flex;
-        flex-direction: column;
-        border-radius: 0;
+    #popular_container {    
+        justify-content: center;
     }
     .popular_frame {
-        width: 97%;
-    }    
+        width: 95%;
+        height: 5em;
+    }   
 
 /* ----------- Hébergements à Marseille ------------------ */  
 
 
     #stays_left_container {
-        width: 95%;
+        display: flex;
+        flex-flow: column;
         background-color: white;
-    }   
+        width: 85%; /* why ??? */
+    } 
+    #room_gallery {
+        flex-direction: column;
+    }  
     .room_frame {
-        width: 95%;
-        height: 200px;
+        width: 100%;
+        height: 10em;
+        box-shadow: 5px 5px 5px #DEEBFF; ;
     }
    
 
 /* ----------- Activités à Marseille ------------------ */ 
 
     #activities_container {
-         height: 1200px;
+         height: 70em;
     }
     
     .activities_gallery {
         display: flex;
+        align-items: center;
         flex-wrap: nowrap;
     }
     .activity_frame {
         width: 95%;
-        height: 200px;
-        margin: auto;
+        height: 10em; /* what ??? */
         margin-bottom: 20px;
     }
 
@@ -487,7 +500,7 @@ body {
     footer {
         display: flex;
         flex-direction: column;
-        height: auto;
+        height: auto; /* what ??? */
         border-radius: 0;
     }
 
