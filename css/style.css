@@ -15,7 +15,7 @@ body {
 
 /* ----------- Header ------------------ */
 
-.logo {
+.logo img {
    width: 5em; 
 }
 
@@ -187,7 +187,7 @@ body {
 .room_price {
     font-size: 0.6em;
     line-height: 3px;
-    color: red;
+    color: black;
 }
 .room_rating {
     font-size: 10px;
@@ -399,19 +399,24 @@ body {
         display: flex;
         justify-content: space-around;
         width: 100%;
-        border-bottom: 3px solid #DEEBFF;
+
     }   
     .nav_website a {
+        display: flex;
+        justify-content: center;
         padding-top: 20px;
+        border-bottom: 3px solid #DEEBFF;
+        border: 2px solid red;
+        width: 50%;
+    
     }
     .nav_website a:hover {
        border-bottom: 3px solid #0065FC;
        margin: auto;
-       width: 50%;
+
     }
     .logo {
-        position: absolute;
-        top: 0;
+       height: 0;
     }
 
 /* ----------- Headline ------------------ */ 
@@ -475,7 +480,11 @@ body {
     .room_frame {
         width: 100%;
         height: 10em;
-        box-shadow: 5px 5px 5px #DEEBFF; ;
+        box-shadow: 5px 5px 5px #DEEBFF;
+    }
+    .room_details {
+        border-radius: 0 0 1em 1em;
+        p 
     }
    
 
