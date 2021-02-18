@@ -159,23 +159,23 @@ body {
 
 /* Liens images en fond */
 .room_frame1 {
-    background-image: url(/images/hebergements/auberge_de_la_cannebiere.jpg);
+    background-image: url(../images/hebergements/auberge_de_la_cannebiere.jpg);
 }
 .room_frame2 {
-    background-image: url(/images/hebergements/hotel_du_port.jpg);
+    background-image: url(../images/hebergements/hotel_du_port.jpg);
 }
 .room_frame3 {
-    background-image: url(/images/hebergements/hotel_les_mouettes.jpg);
+    background-image: url(../images/hebergements/hotel_les_mouettes.jpg);
 }
 .room_frame4 {
-    background-image: url(/images/hebergements/hotel_de_la_mer.jpg);
+    background-image: url(../images/hebergements/hotel_de_la_mer.jpg);
     background-position: 75% 65%;
 }
 .room_frame5 {
-    background-image: url(/images/hebergements/auberge_le_panier.jpg);
+    background-image: url(../images/hebergements/auberge_le_panier.jpg);
 }
 .room_frame6 {
-    background-image: url(/images/hebergements/hotel_chez_amina.jpg);
+    background-image: url(../images/hebergements/hotel_chez_amina.jpg);
     background-position: 90% 65%;
 }
 
@@ -250,13 +250,13 @@ body {
 
 /* liens images en fond */
 .popular_frame1 {
-    background-image: url(/images/hebergements/hotel_le_soleil_du_matin.jpg);
+    background-image: url(../images/hebergements/hotel_le_soleil_du_matin.jpg);
 }
 .popular_frame2 {
-    background-image: url(/images/hebergements/au_coeur_de_leau.jpg);
+    background-image: url(../images/hebergements/au_coeur_de_leau.jpg);
 }
 .popular_frame3 {
-    background-image: url(/images/hebergements/hotel_tout_bleu_et_blanc.jpg);
+    background-image: url(../images/hebergements/hotel_tout_bleu_et_blanc.jpg);
 }
 
 /* infos populaires */
