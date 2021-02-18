@@ -30,11 +30,11 @@
         </header> 
 
     <!-- Section contenant texte intro, barre de recherche + boutons filtres -->
-        <section id="search">
+    <section id="search">
 
         <!-- texte intro -->    
-        
-            <div id="headline">
+
+            <div id="intro">
                 <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
@@ -46,7 +46,8 @@
                 <input type="submit" name="submit" id="submit" value="Rechercher">
                 <i class="fas fa-search"></i>
             </div>
-
+            
+    
         <!-- boutons filtres -->    
 
             <div id="filters">
@@ -66,10 +67,12 @@
                 <div class="filter_button">
                     <i class="fas fa-dog"></i>
                     <a href="#">Animaux autorisés</a> 
-                </div>    
+                </div>   
             </div>    
-            <p><i class="fas fa-info-circle"></i> Plus de 500 logements sont disponibles dans cette ville</p>
-        </section>   
+            <div class="filter_text">
+                <i class="fas fa-info-circle"></i> Plus de 500 logements sont disponibles dans cette ville
+            </div> 
+    </section>   
 
     <!-- Section contenant hébergements + populaires -->        
         <section id="stays_container"> 
@@ -169,7 +172,7 @@
         
         <!-- Section les plus populaires -->
             <div id="popular_container">
-                <div class="top_title">
+                <div class="popular_title">
                     <h3>Les plus populaires</h3>
                     <i class="fas fa-chart-line"></i>
                 </div>
@@ -223,54 +226,52 @@
         </section>
 
     <!-- section Activités -->
-        <section id="activities_container">
-            <div id="activities_sub_container">
-                <h3>Activités à Marseille</h3>
+    <section id="activities_container">
+        <div id="activities_sub_container">
+            <h3>Activités à Marseille</h3>
 
-            <!-- gallerie images activités -->
-                <div class="activities_gallery">
+        <!-- gallerie images activités -->
+            <div class="activities_gallery">
 
-                    
-                    <a href="../images/activites/vieux_port.jpg" class="activity_frame activity_frame1">
-                        <div class="activity_name">
-                            <h4>Vieux Port</h4>
-                        </div>
-                    </a>
-                    
-                    <a href="../images/activites/fort_de_porneques.jpg" class="activity_frame activity_frame2">
-                        <div class="activity_name">
-                            <h4>Fort de Pornèques</h4>
-                        </div>
-                    </a>
-                    
-                    <a href="../images/activites/iles_du_frioul.jpg" class="activity_frame activity_frame3">
-                        <div class="activity_name">
-                            <h4>Îles du Frioul</h4>
-                        </div>
-                    </a>
                 
-                    <a href="../images/activites/parc_national_des_calenques.jpg" class="activity_frame activity_frame4">
-                        <div class="activity_name">
-                            <h4>Parc National des Calenques</h4>
-                        </div>
-                    </a>
+                <a href="../images/activites/vieux_port.jpg" class="activity_frame activity_frame1">
+                    <div class="activity_name">
+                        <h4>Vieux Port</h4>
+                    </div>
+                </a>
                 
-                    <a href="../images/activites/notre_dame_de_la_garde.jpg" class="activity_frame activity_frame5">
-                        <div class="activity_name">
-                            <h4>Notre-Dame-de-la-Garde</h4>
-                        </div>
-                    </a>
-                    
-                    <a href="../images/activites/parc_longchamp.jpg" class="activity_frame activity_frame6">
-                        <div class="activity_name">
-                            <h4>Parc Longchamp</h4>
-                        </div>
-                    </a>
+                <a href="../images/activites/fort_de_porneques.jpg" class="activity_frame activity_frame2">
+                    <div class="activity_name">
+                        <h4>Fort de Pornèques</h4>
+                    </div>
+                </a>
                 
-                </div>   
+                <a href="../images/activites/iles_du_frioul.jpg" class="activity_frame activity_frame3">
+                    <div class="activity_name">
+                        <h4>Îles du Frioul</h4>
+                    </div>
+                </a>
+            
+                <a href="../images/activites/parc_national_des_calenques.jpg" class="activity_frame activity_frame4">
+                    <div class="activity_name">
+                        <h4>Parc National des Calenques</h4>
+                    </div>
+                </a>
+            
+                <a href="../images/activites/notre_dame_de_la_garde.jpg" class="activity_frame activity_frame5">
+                    <div class="activity_name">
+                        <h4>Notre-Dame-de-la-Garde</h4>
+                    </div>
+                </a>
                 
-            </div>
-        </section>
+                <a href="../images/activites/parc_longchamp.jpg" class="activity_frame activity_frame6">
+                    <div class="activity_name">
+                        <h4>Parc Longchamp</h4>
+                    </div>
+                </a>
+            </div>      
+        </div>
+    </section>
     
     <!-- pied de page, A propos de  -->    
         <footer>
