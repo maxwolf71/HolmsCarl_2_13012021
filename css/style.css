@@ -703,18 +703,15 @@ body {
     }  
     .room_frame {
         width: 95%;
-        height: 160px;
+        height: 200px;
         box-shadow: 5px 5px 5px #DEEBFF;
     }
 /* ----------- Activités à Marseille ------------------ */ 
 
-<<<<<<< HEAD
-=======
     #activities_container {
         display: flex;
     }
 
->>>>>>> 274cd8a3313694cf3c03d2835a19e1574e5de11d
     .activities_gallery {
         display: flex;
         align-items: center;
@@ -722,11 +719,7 @@ body {
     }
     .activity_frame {
         width: 95%;
-<<<<<<< HEAD
         height: 200px;
-=======
-        height: 150px;
->>>>>>> 274cd8a3313694cf3c03d2835a19e1574e5de11d
         margin-bottom: 20px;
     }
 
