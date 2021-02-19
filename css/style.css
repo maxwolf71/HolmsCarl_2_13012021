@@ -359,7 +359,7 @@ body {
     color: black;
     font-size: 12px;
     padding-left: 10px;
-    border-radius: 0 0  10px 10px;
+    border-radius: 0 0 10px 10px;
 }
 
  /* ----------- Footer ------------------ */
@@ -527,7 +527,6 @@ body {
     }
     .nav_website {
         display: flex;
-        justify-content: space-around;
         width: 100%;
     }   
     .nav_website a {
@@ -619,6 +618,9 @@ body {
         height: 200px;
         box-shadow: 5px 5px 5px #DEEBFF;
     }
+    .room_details {
+        width: 99%;
+    }
 /* ----------- Activités à Marseille ------------------ */ 
 
     #activities_container {
@@ -634,6 +636,9 @@ body {
         width: 95%;
         height: 200px;
         margin-bottom: 20px;
+    }
+    .activity_name {
+        width: 98%;
     }
 
 /* ----------- Footer ------------------ */
